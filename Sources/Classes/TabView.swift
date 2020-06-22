@@ -1,3 +1,12 @@
+//
+//  TabView.swift
+//  Cockpit Purchase module: Next version of purchase (order) request model
+//
+//  Fixed disappearance issue https://github.com/yysskk/SwipeMenuViewController/issues/73 by Thomas Bechtum on 22-JUN-2020
+//
+//  Copyright © 2020 Yusuke Morishita. MIT License.
+//
+
 import UIKit
 
 // MARK: - TabViewDelegate
@@ -325,7 +334,7 @@ open class TabView: UIScrollView {
                     ])
             }
 
-            contentSize = .zero
+            // causes tab view disappears on some devices / after rotation to landscape https://github.com/yysskk/SwipeMenuViewController/issues/73 : contentSize = .zero
         }
     }
 
