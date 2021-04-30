@@ -147,7 +147,7 @@ public struct SwipeMenuViewOptions {
 
 // MARK: - SwipeMenuViewDelegate
 
-public protocol SwipeMenuViewDelegate: class {
+public protocol SwipeMenuViewDelegate: AnyObject { // : class Using 'class' keyword for protocol inheritance is deprecated; use 'AnyObject' instead
 
     /// Called before setup self.
     func swipeMenuView(_ swipeMenuView: SwipeMenuView, viewWillSetupAt currentIndex: Int)
@@ -171,7 +171,7 @@ extension SwipeMenuViewDelegate {
 
 // MARK: - SwipeMenuViewDataSource
 
-public protocol SwipeMenuViewDataSource: class {
+public protocol SwipeMenuViewDataSource: AnyObject { // : class Using 'class' keyword for protocol inheritance is deprecated; use 'AnyObject' instead
 
     /// Return the number of pages in `SwipeMenuView`.
     func numberOfPages(in swipeMenuView: SwipeMenuView) -> Int

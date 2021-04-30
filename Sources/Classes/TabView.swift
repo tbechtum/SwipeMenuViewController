@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: - TabViewDelegate
 
-public protocol TabViewDelegate: class {
+public protocol TabViewDelegate: AnyObject {
 
     /// Called before selecting the tab.
     func tabView(_ tabView: TabView, willSelectTabAt index: Int)
@@ -28,7 +28,7 @@ extension TabViewDelegate {
 
 // MARK: - TabViewDataSource
 
-public protocol TabViewDataSource: class {
+public protocol TabViewDataSource: AnyObject {
 
     /// Return the number of Items in `TabView`.
     func numberOfItems(in tabView: TabView) -> Int

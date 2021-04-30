@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SwipeMenuViewController"
-  s.version      = "4.1.0"
+  s.version      = "4.1.1"
   s.summary      = "Swipable tab and menu UI framework"
 
   s.description  = <<-DESC
